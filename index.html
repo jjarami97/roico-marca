@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roico — La plataforma que guía tu operación textil</title>
+<meta name="description" content="Roico centraliza producción, inventario de tela, compras, talleres tercerizados, ventas y costos para empresas de confección — en un solo lugar.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Cline x1='82' y1='18' x2='82' y2='50' stroke='%230A0A0A' stroke-width='9'/%3E%3Cline x1='82' y1='50' x2='82' y2='72' stroke='%230A0A0A' stroke-width='9'/%3E%3Cline x1='82' y1='72' x2='60' y2='90' stroke='%23FF5A36' stroke-width='9'/%3E%3Cline x1='60' y1='90' x2='36' y2='86' stroke='%23FF5A36' stroke-width='9'/%3E%3Ccircle cx='82' cy='18' r='10' fill='%230A0A0A'/%3E%3Ccircle cx='82' cy='50' r='9' fill='%230A0A0A'/%3E%3Ccircle cx='82' cy='72' r='9' fill='%230A0A0A'/%3E%3Ccircle cx='60' cy='90' r='10' fill='%23FF5A36'/%3E%3Ccircle cx='36' cy='86' r='10' fill='%23FF5A36'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Fraunces:ital,wght@1,400;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+  body{margin:0;background:#FFFFFF;font-family:'Sora',system-ui,sans-serif;color:#0A0A0A;-webkit-font-smoothing:antialiased;}
+  a{color:#0A0A0A;text-decoration:none;}
+  a.nav-link{color:#2B2A28;}
+  a.nav-link:hover{color:#FF5A36;}
+  button{font-family:'Sora',system-ui,sans-serif;cursor:pointer;border:none;}
+  * { box-sizing: border-box; }
+  .container{width:100%;max-width:1160px;margin:0 auto;padding-inline:24px;}
+  @media (max-width:860px){
+    .hide-mobile{display:none !important;}
+    .stack-mobile{flex-direction:column !important;}
+    .grid-2{grid-template-columns:1fr !important;}
+    .grid-3{grid-template-columns:1fr !important;}
+    .h1-fluid{font-size:40px !important;line-height:1.1 !important;}
+    .pad-mobile{padding-left:24px !important;padding-right:24px !important;}
+  }
+</style>
+</head>
+<body>
+
+<div style="width:100%;min-height:100%;display:flex;flex-direction:column;background:#FFFFFF;">
+
+  <!-- ===== HEADER ===== -->
+  <header style="width:100%;border-bottom:1px solid #F5F0E8;background:#FFFFFF;">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;height:76px;">
+      <a href="#inicio" aria-label="Roico — inicio" style="display:flex;align-items:center;gap:10px;">
+        <svg width="34" height="34" viewBox="0 0 120 120" role="img" aria-label="Símbolo de Roico">
+          <line x1="82" y1="18" x2="82" y2="50" stroke="#0A0A0A" stroke-width="7"/>
+          <line x1="82" y1="50" x2="82" y2="72" stroke="#0A0A0A" stroke-width="7"/>
+          <line x1="82" y1="72" x2="60" y2="90" stroke="#FF5A36" stroke-width="7"/>
+          <line x1="60" y1="90" x2="36" y2="86" stroke="#FF5A36" stroke-width="7"/>
+          <line x1="82" y1="50" x2="104" y2="42" stroke="#0A0A0A" stroke-width="5" opacity="0.7"/>
+          <line x1="60" y1="90" x2="66" y2="110" stroke="#FF5A36" stroke-width="5" opacity="0.7"/>
+          <circle cx="82" cy="18" r="9" fill="#0A0A0A"/>
+          <circle cx="82" cy="50" r="7.5" fill="#0A0A0A"/>
+          <circle cx="82" cy="72" r="7.5" fill="#0A0A0A"/>
+          <circle cx="104" cy="42" r="5.5" fill="#0A0A0A" opacity="0.7"/>
+          <circle cx="60" cy="90" r="9" fill="#FF5A36"/>
+          <circle cx="36" cy="86" r="9" fill="#FF5A36"/>
+          <circle cx="66" cy="110" r="5.5" fill="#FF5A36" opacity="0.7"/>
+        </svg>
+        <span style="font-weight:800;font-size:22px;letter-spacing:-0.5px;">Roico</span>
+      </a>
+
+      <nav class="hide-mobile" style="display:flex;align-items:center;gap:32px;">
+        <a class="nav-link" href="#modulos" style="font-size:15px;font-weight:500;">Producto</a>
+        <a class="nav-link" href="#proceso" style="font-size:15px;font-weight:500;">Cómo funciona</a>
+        <a class="nav-link" href="#marca-blanca" style="font-size:15px;font-weight:500;">Para tu empresa</a>
+        <a class="nav-link" href="#contacto" style="font-size:15px;font-weight:500;">Contacto</a>
+      </nav>
+
+      <div style="display:flex;align-items:center;gap:12px;">
+        <a href="#contacto" class="hide-mobile nav-link" style="font-size:15px;font-weight:600;">Iniciar sesión</a>
+        <a href="#contacto" style="background:#FF5A36;color:#FFFFFF;font-weight:700;font-size:14px;padding:11px 20px;border-radius:8px;display:inline-block;">Agendar una demo</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="inicio" style="width:100%;background:#0A0A0A;color:#FFFFFF;">
+    <div class="container stack-mobile pad-mobile" style="display:flex;align-items:center;gap:56px;padding-top:88px;padding-bottom:88px;">
+      <div style="flex:1 1 520px;min-width:0;">
+        <div style="display:inline-flex;align-items:center;gap:8px;background:#2B2A28;border-radius:999px;padding:7px 14px 7px 10px;margin-bottom:24px;">
+          <span style="width:7px;height:7px;border-radius:50%;background:#FF5A36;display:inline-block;"></span>
+          <span style="font-size:13px;font-weight:600;color:#F5F0E8;">Hecho para confección y producción de ropa</span>
+        </div>
+        <h1 class="h1-fluid" style="font-size:52px;line-height:1.08;font-weight:800;letter-spacing:-1px;margin:0 0 24px;">
+          La plataforma que guía tu operación textil.
+        </h1>
+        <p style="font-size:18px;line-height:1.6;color:#F5F0E8;margin:0 0 36px;max-width:520px;">
+          Centraliza producción, inventario de tela, compras, talleres tercerizados, ventas y costos en un solo lugar — para que dejes de perseguir hojas de Excel, papeles sueltos y cadenas de WhatsApp.
+        </p>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="#contacto" style="background:#FF5A36;color:#FFFFFF;font-weight:700;font-size:15px;padding:15px 26px;border-radius:9px;display:inline-block;">Agendar una demo</a>
+          <a href="#modulos" style="background:transparent;color:#FFFFFF;font-weight:600;font-size:15px;padding:15px 22px;border-radius:9px;border:1px solid #2B2A28;display:inline-block;">Ver los módulos</a>
+        </div>
+      </div>
+
+      <div style="flex:1 1 460px;min-width:0;">
+        <div style="background:#141312;border:1px solid #2B2A28;border-radius:16px;padding:28px;">
+          <div style="font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#8C8276;margin-bottom:18px;">Lote L-0482 · Referencia REF-1190</div>
+          <div style="display:flex;flex-direction:column;gap:14px;">
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 14px;background:#0A0A0A;border-radius:10px;">
+              <span style="font-size:14px;color:#F5F0E8;">Corte</span>
+              <span style="font-size:12px;font-weight:700;color:#2E8B57;background:rgba(46,139,87,0.15);padding:4px 10px;border-radius:999px;">Completado</span>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 14px;background:#0A0A0A;border-radius:10px;">
+              <span style="font-size:14px;color:#F5F0E8;">Confección · Taller Las Palmas</span>
+              <span style="font-size:12px;font-weight:700;color:#E8A33D;background:rgba(232,163,61,0.15);padding:4px 10px;border-radius:999px;">En taller</span>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 14px;background:#0A0A0A;border-radius:10px;">
+              <span style="font-size:14px;color:#8C8276;">Control de calidad</span>
+              <span style="font-size:12px;font-weight:700;color:#8C8276;background:#1C1B19;padding:4px 10px;border-radius:999px;">Pendiente</span>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 14px;background:#0A0A0A;border-radius:10px;">
+              <span style="font-size:14px;color:#8C8276;">Empaque</span>
+              <span style="font-size:12px;font-weight:700;color:#8C8276;background:#1C1B19;padding:4px 10px;border-radius:999px;">Pendiente</span>
+            </div>
+          </div>
+          <div style="margin-top:20px;padding-top:18px;border-top:1px solid #2B2A28;font-size:13px;color:#8C8276;">
+            Entregadas al taller: <strong style="color:#F5F0E8;">320</strong> · Recibidas: <strong style="color:#F5F0E8;">180</strong> · Pendientes: <strong style="color:#FF5A36;">140</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS STRIP ===== -->
+  <section style="width:100%;background:#F5F0E8;border-bottom:1px solid #EDE6D9;">
+    <div class="container grid-3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:0;padding:36px 24px;">
+      <div style="text-align:center;padding:0 16px;">
+        <div style="font-size:30px;font-weight:800;letter-spacing:-0.5px;">1 sola fuente</div>
+        <div style="font-size:14px;color:#2B2A28;margin-top:4px;">de verdad por pedido, en vez de papel + Excel + WhatsApp</div>
+      </div>
+      <div style="text-align:center;padding:0 16px;border-left:1px solid #DDD3C2;border-right:1px solid #DDD3C2;">
+        <div style="font-size:30px;font-weight:800;letter-spacing:-0.5px;">Interno o tercerizado</div>
+        <div style="font-size:14px;color:#2B2A28;margin-top:4px;">cada etapa queda registrada, la haga tu equipo o un taller externo</div>
+      </div>
+      <div style="text-align:center;padding:0 16px;">
+        <div style="font-size:30px;font-weight:800;letter-spacing:-0.5px;">Tu marca, tus datos</div>
+        <div style="font-size:14px;color:#2B2A28;margin-top:4px;">base de datos separada por empresa, nunca compartida</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROBLEMA ===== -->
+  <section style="width:100%;background:#FFFFFF;">
+    <div class="container pad-mobile" style="padding-top:96px;padding-bottom:88px;">
+      <div style="max-width:620px;margin-bottom:56px;">
+        <div style="font-size:13px;font-weight:700;color:#FF5A36;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:12px;">El problema</div>
+        <h2 style="font-size:34px;font-weight:800;letter-spacing:-0.5px;margin:0 0 16px;line-height:1.2;">
+          Tu operación ya funciona. Lo que falta es poder verla toda al mismo tiempo.
+        </h2>
+        <p style="font-size:16px;line-height:1.6;color:#2B2A28;margin:0;">
+          En la mayoría de talleres y fábricas de confección, cada etapa vive en su propio mundo: una libreta de corte, un Excel de inventario, un chat de WhatsApp con el taller, una factura física. Nadie puede responder de inmediato en qué va un pedido.
+        </p>
+      </div>
+
+      <div class="grid-3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+        <div style="border:1px solid #F5F0E8;border-radius:14px;padding:28px;">
+          <div style="width:40px;height:40px;border-radius:10px;background:#F5F0E8;display:flex;align-items:center;justify-content:center;margin-bottom:18px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 2h9l5 5v15H6z" stroke="#0A0A0A" stroke-width="1.8"/><path d="M15 2v5h5" stroke="#0A0A0A" stroke-width="1.8"/><path d="M9 13h6M9 17h6" stroke="#0A0A0A" stroke-width="1.8"/></svg>
+          </div>
+          <h3 style="font-size:17px;font-weight:700;margin:0 0 8px;">Papel que se pierde</h3>
+          <p style="font-size:14px;line-height:1.6;color:#2B2A28;margin:0;">Órdenes de corte, fichas técnicas y remisiones físicas que se traspapelan antes de llegar al sistema.</p>
+        </div>
+        <div style="border:1px solid #F5F0E8;border-radius:14px;padding:28px;">
+          <div style="width:40px;height:40px;border-radius:10px;background:#F5F0E8;display:flex;align-items:center;justify-content:center;margin-bottom:18px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2" stroke="#0A0A0A" stroke-width="1.8"/><path d="M3 9h18M9 9v11" stroke="#0A0A0A" stroke-width="1.8"/></svg>
+          </div>
+          <h3 style="font-size:17px;font-weight:700;margin:0 0 8px;">Excel duplicado</h3>
+          <p style="font-size:14px;line-height:1.6;color:#2B2A28;margin:0;">La misma información digitada varias veces, en archivos distintos, que casi nunca cuadran entre sí.</p>
+        </div>
+        <div style="border:1px solid #F5F0E8;border-radius:14px;padding:28px;">
+          <div style="width:40px;height:40px;border-radius:10px;background:#F5F0E8;display:flex;align-items:center;justify-content:center;margin-bottom:18px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 1 1-4-7.2" stroke="#0A0A0A" stroke-width="1.8"/><path d="M21 3v6h-6" stroke="#0A0A0A" stroke-width="1.8"/><circle cx="12" cy="12" r="0.1" stroke="#0A0A0A"/></svg>
+          </div>
+          <h3 style="font-size:17px;font-weight:700;margin:0 0 8px;">WhatsApp disperso</h3>
+          <p style="font-size:14px;line-height:1.6;color:#2B2A28;margin:0;">Pedidos a talleres, fotos de avance y acuerdos de precio dispersos en decenas de chats sin trazabilidad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESO / TRAZABILIDAD ===== -->
+  <section id="proceso" style="width:100%;background:#0A0A0A;color:#FFFFFF;">
+    <div class="container pad-mobile" style="padding-top:96px;padding-bottom:96px;">
+      <div style="max-width:620px;margin-bottom:56px;">
+        <div style="font-size:13px;font-weight:700;color:#FF5A36;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:12px;">Cómo funciona</div>
+        <h2 style="font-size:34px;font-weight:800;letter-spacing:-0.5px;margin:0 0 16px;line-height:1.2;color:#FFFFFF;">
+          Cada prenda deja un rastro, etapa por etapa.
+        </h2>
+        <p style="font-size:16px;line-height:1.6;color:#F5F0E8;margin:0;">
+          Un pedido puede pasar por procesos internos y por talleres externos. Roico sigue la prenda en cada paso — sepas quién lo hizo, cuándo, y qué quedó pendiente.
+        </p>
+      </div>
+
+      <div style="overflow-x:auto;padding-bottom:8px;">
+        <div style="display:flex;align-items:flex-start;gap:0;min-width:920px;">
+          <div style="display:flex;flex-direction:column;align-items:center;flex:1;position:relative;">
+            <div style="width:40px;height:40px;border-radius:50%;background:#141312;border:2px solid #2B2A28;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#F5F0E8;">1</div>
+            <div style="font-size:13px;font-weight:600;margin-top:12px;text-align:center;">Diseño</div>
+            <div style="font-size:11px;color:#8C8276;margin-top:2px;">Interno</div>
+          </div>
+          <div style="flex:1;height:2px;background:#2B2A28;margin-top:19px;"></div>
+          <div style="display:flex;flex-direction:column;align-items:center;flex:1;">
+            <div style="width:40px;height:40px;border-radius:50%;background:#141312;border:2px solid #2B2A28;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#F5F0E8;">2</div>
+            <div style="font-size:13px;font-weight:600;margin-top:12px;text-align:center;">Corte</div>
+            <div style="font-size:11px;color:#8C8276;margin-top:2px;">Interno</div>
+          </div>
+          <div style="flex:1;height:2px;background:#FF5A36;margin-top:19px;"></div>
+          <div style="display:flex;flex-direction:column;align-items:center;flex:1;">
+            <div style="width:40px;height:40px;border-radius:50%;background:#FF5A36;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#FFFFFF;">3</div>
+            <div style="font-size:13px;font-weight:600;margin-top:12px;text-align:center;">Confección</div>
+            <div style="font-size:11px;color:#FF5A36;margin-top:2px;">Taller externo</div>
+          </div>
+          <div style="flex:1;height:2px;background:#FF5A36;margin-top:19px;"></div>
+          <div style="display:flex;flex-direction:column;align-items:center;flex:1;">
+            <div style="width:40px;height:40px;border-radius:50%;background:#141312;border:2px solid #FF5A36;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#FF5A36;">4</div>
+            <div style="font-size:13px;font-weight:600;margin-top:12px;text-align:center;">Estampado / Bordado</div>
+            <div style="font-size:11px;color:#FF5A36;margin-top:2px;">Taller externo</div>
+          </div>
+          <div style="flex:1;height:2px;background:#2B2A28;margin-top:19px;"></div>
+          <div style="display:flex;flex-direction:column;align-items:center;flex:1;">
+            <div style="width:40px;height:40px;border-radius:50%;background:#141312;border:2px solid #2B2A28;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#F5F0E8;">5</div>
+            <div style="font-size:13px;font-weight:600;margin-top:12px;text-align:center;">Control de calidad</div>
+            <div style="font-size:11px;color:#8C8276;margin-top:2px;">Interno</div>
+          </div>
+          <div style="flex:1;height:2px;background:#2B2A28;margin-top:19px;"></div>
+          <div style="display:flex;flex-direction:column;align-items:center;flex:1;">
+            <div style="width:40px;height:40px;border-radius:50%;background:#141312;border:2px solid #2B2A28;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#F5F0E8;">6</div>
+            <div style="font-size:13px;font-weight:600;margin-top:12px;text-align:center;">Empaque</div>
+            <div style="font-size:11px;color:#8C8276;margin-top:2px;">Interno</div>
+          </div>
+          <div style="flex:1;height:2px;background:#2B2A28;margin-top:19px;"></div>
+          <div style="display:flex;flex-direction:column;align-items:center;flex:1;">
+            <div style="width:40px;height:40px;border-radius:50%;background:#141312;border:2px solid #2B2A28;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#F5F0E8;">7</div>
+            <div style="font-size:13px;font-weight:600;margin-top:12px;text-align:center;">Inventario</div>
+            <div style="font-size:11px;color:#8C8276;margin-top:2px;">Interno</div>
+          </div>
+          <div style="flex:1;height:2px;background:#2B2A28;margin-top:19px;"></div>
+          <div style="display:flex;flex-direction:column;align-items:center;flex:1;">
+            <div style="width:40px;height:40px;border-radius:50%;background:#141312;border:2px solid #2B2A28;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#F5F0E8;">8</div>
+            <div style="font-size:13px;font-weight:600;margin-top:12px;text-align:center;">Venta y despacho</div>
+            <div style="font-size:11px;color:#8C8276;margin-top:2px;">Interno</div>
+          </div>
+        </div>
+      </div>
+
+      <p style="font-size:13px;color:#8C8276;margin-top:28px;">
+        <span style="color:#FF5A36;">●</span> Procesos tercerizados — Roico registra cuánto se entregó al taller, cuánto se recibió, qué quedó pendiente y en qué fecha, sin salir de la plataforma.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== MÓDULOS ===== -->
+  <section id="modulos" style="width:100%;background:#FFFFFF;">
+    <div class="container pad-mobile" style="padding-top:96px;padding-bottom:40px;">
+      <div style="max-width:620px;margin-bottom:56px;">
+        <div style="font-size:13px;font-weight:700;color:#FF5A36;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:12px;">El producto</div>
+        <h2 style="font-size:34px;font-weight:800;letter-spacing:-0.5px;margin:0 0 16px;line-height:1.2;">
+          Un módulo para cada parte del negocio. Todos hablando entre sí.
+        </h2>
+        <p style="font-size:16px;line-height:1.6;color:#2B2A28;margin:0;">
+          Activa solo lo que tu empresa necesita hoy, y agrega módulos a medida que creces — sin reescribir lo que ya funciona.
+        </p>
+      </div>
+
+      <div class="grid-3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#F5F0E8;border:1px solid #F5F0E8;border-radius:16px;overflow:hidden;">
+
+        <div style="background:#FFFFFF;padding:30px;">
+          <div style="width:38px;height:38px;border-radius:9px;background:rgba(255,90,54,0.12);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7l8-4 8 4-8 4-8-4z" stroke="#FF5A36" stroke-width="1.8"/><path d="M4 7v10l8 4 8-4V7" stroke="#FF5A36" stroke-width="1.8"/><path d="M12 11v10" stroke="#FF5A36" stroke-width="1.8"/></svg>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">Producción y órdenes</h3>
+          <p style="font-size:14px;line-height:1.6;color:#2B2A28;margin:0;">Lotes por referencia, color y talla, con programación de corte y estado en tiempo real.</p>
+        </div>
+
+        <div style="background:#FFFFFF;padding:30px;">
+          <div style="width:38px;height:38px;border-radius:9px;background:rgba(31,92,92,0.12);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 9.5L12 3l9 6.5" stroke="#1F5C5C" stroke-width="1.8"/><path d="M5 9v11h14V9" stroke="#1F5C5C" stroke-width="1.8"/><path d="M9 20v-6h6v6" stroke="#1F5C5C" stroke-width="1.8"/></svg>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">Inventario de tela y producto</h3>
+          <p style="font-size:14px;line-height:1.6;color:#2B2A28;margin:0;">Saldo por tela y color, consumo automático al crear un lote, y alertas de cobertura antes de que falte material.</p>
+        </div>
+
+        <div style="background:#FFFFFF;padding:30px;">
+          <div style="width:38px;height:38px;border-radius:9px;background:rgba(10,10,10,0.08);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 7h18l-2 13H5L3 7z" stroke="#0A0A0A" stroke-width="1.8"/><path d="M8 7V5a4 4 0 0 1 8 0v2" stroke="#0A0A0A" stroke-width="1.8"/></svg>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">Compras y proveedores</h3>
+          <p style="font-size:14px;line-height:1.6;color:#2B2A28;margin:0;">Pedidos de tela e insumos, recepción por rollos y seguimiento de cada proveedor en un solo panel.</p>
+        </div>
+
+        <div style="background:#FFFFFF;padding:30px;">
+          <div style="width:38px;height:38px;border-radius:9px;background:rgba(232,163,61,0.15);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2" stroke="#E8A33D" stroke-width="1.8"/><path d="M8 2v4M16 2v4M3 10h18" stroke="#E8A33D" stroke-width="1.8"/></svg>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">Talleres tercerizados</h3>
+          <p style="font-size:14px;line-height:1.6;color:#2B2A28;margin:0;">Cuánto se entregó, cuánto volvió, qué está pendiente y los pagos a cada confeccionista o empacador externo.</p>
+        </div>
+
+        <div style="background:#FFFFFF;padding:30px;">
+          <div style="width:38px;height:38px;border-radius:9px;background:rgba(59,130,196,0.14);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="9" cy="20" r="1.4" stroke="#3B82C4" stroke-width="1.6"/><circle cx="18" cy="20" r="1.4" stroke="#3B82C4" stroke-width="1.6"/><path d="M2 3h2l2.4 12.2a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 2-1.6L21 7H6" stroke="#3B82C4" stroke-width="1.8"/></svg>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">Ventas, pedidos y despacho</h3>
+          <p style="font-size:14px;line-height:1.6;color:#2B2A28;margin:0;">Pedidos por cliente con varias referencias, despacho automático desde producto terminado y facturación consecutiva.</p>
+        </div>
+
+        <div style="background:#FFFFFF;padding:30px;">
+          <div style="width:38px;height:38px;border-radius:9px;background:rgba(46,139,87,0.14);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 19V10M10 19V4M16 19v-7M22 19H2" stroke="#2E8B57" stroke-width="1.8"/></svg>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;">Costos y reportería</h3>
+          <p style="font-size:14px;line-height:1.6;color:#2B2A28;margin:0;">Margen por referencia, productividad por etapa, lotes atrasados y desempeño de talleres en un dashboard vivo.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CITA EDITORIAL ===== -->
+  <section style="width:100%;background:#F5F0E8;">
+    <div class="container pad-mobile" style="padding-top:84px;padding-bottom:84px;text-align:center;">
+      <p style="font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:30px;line-height:1.45;color:#0A0A0A;max-width:720px;margin:0 auto;">
+        "La plataforma que guía tu operación textil."
+      </p>
+      <div style="margin-top:20px;font-size:13px;color:#8C8276;letter-spacing:0.04em;">
+        Ro'i — mi pastor, mi guía — más Co de confección.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARCA BLANCA ===== -->
+  <section id="marca-blanca" style="width:100%;background:#FFFFFF;">
+    <div class="container stack-mobile pad-mobile" style="padding-top:96px;padding-bottom:96px;display:flex;align-items:center;gap:56px;">
+      <div style="flex:1 1 480px;min-width:0;">
+        <div style="font-size:13px;font-weight:700;color:#FF5A36;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:12px;">Para tu empresa</div>
+        <h2 style="font-size:32px;font-weight:800;letter-spacing:-0.5px;margin:0 0 16px;line-height:1.2;">
+          Tu plataforma, con tu nombre.
+        </h2>
+        <p style="font-size:16px;line-height:1.6;color:#2B2A28;margin:0 0 20px;">
+          Roico nació resolviendo la operación de una empresa de confección real, y está construido para que otras empresas del sector lo usen igual: cada cliente tiene su propio subdominio y su propia base de datos, completamente separada — nunca se mezcla información entre empresas.
+        </p>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;">
+          <li style="display:flex;gap:10px;align-items:flex-start;font-size:15px;color:#2B2A28;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" style="flex-shrink:0;margin-top:2px;"><path d="M20 6L9 17l-5-5" stroke="#2E8B57" stroke-width="2.2"/></svg>
+            Base de datos independiente por empresa — seguridad y confidencialidad de tu información.
+          </li>
+          <li style="display:flex;gap:10px;align-items:flex-start;font-size:15px;color:#2B2A28;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" style="flex-shrink:0;margin-top:2px;"><path d="M20 6L9 17l-5-5" stroke="#2E8B57" stroke-width="2.2"/></svg>
+            Módulos activables según lo que tu operación necesite hoy.
+          </li>
+          <li style="display:flex;gap:10px;align-items:flex-start;font-size:15px;color:#2B2A28;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" style="flex-shrink:0;margin-top:2px;"><path d="M20 6L9 17l-5-5" stroke="#2E8B57" stroke-width="2.2"/></svg>
+            Roles y permisos por área — diseño, corte, confección, bodega, ventas y administración.
+          </li>
+        </ul>
+      </div>
+
+      <div style="flex:1 1 440px;min-width:0;">
+        <div style="background:#0A0A0A;border-radius:16px;padding:8px;">
+          <div style="background:#141312;border-radius:11px;padding:20px 20px 0;">
+            <div style="display:flex;gap:7px;padding-bottom:16px;">
+              <span style="width:9px;height:9px;border-radius:50%;background:#2B2A28;display:inline-block;"></span>
+              <span style="width:9px;height:9px;border-radius:50%;background:#2B2A28;display:inline-block;"></span>
+              <span style="width:9px;height:9px;border-radius:50%;background:#2B2A28;display:inline-block;"></span>
+            </div>
+          </div>
+          <div style="background:#FFFFFF;border-radius:0 0 11px 11px;padding:22px;">
+            <div style="font-size:12px;color:#8C8276;background:#F5F0E8;border-radius:7px;padding:9px 12px;margin-bottom:18px;">🔒 tuempresa.roico.com</div>
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:22px;">
+              <span style="font-size:16px;font-weight:700;">Tu Empresa</span>
+              <span style="width:28px;height:28px;border-radius:50%;background:#F5F0E8;"></span>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:10px;">
+              <div style="height:12px;border-radius:4px;background:#F5F0E8;width:80%;"></div>
+              <div style="height:12px;border-radius:4px;background:#F5F0E8;width:60%;"></div>
+              <div style="height:12px;border-radius:4px;background:#F5F0E8;width:70%;"></div>
+            </div>
+            <div style="margin-top:22px;padding-top:16px;border-top:1px solid #F5F0E8;display:flex;align-items:center;justify-content:center;gap:6px;">
+              <svg width="14" height="14" viewBox="0 0 120 120" aria-hidden="true"><line x1="82" y1="18" x2="82" y2="50" stroke="#8C8276" stroke-width="9"/><line x1="82" y1="50" x2="82" y2="72" stroke="#8C8276" stroke-width="9"/><line x1="82" y1="72" x2="60" y2="90" stroke="#8C8276" stroke-width="9"/><line x1="60" y1="90" x2="36" y2="86" stroke="#8C8276" stroke-width="9"/><circle cx="82" cy="18" r="10" fill="#8C8276"/><circle cx="82" cy="50" r="9" fill="#8C8276"/><circle cx="82" cy="72" r="9" fill="#8C8276"/><circle cx="60" cy="90" r="10" fill="#8C8276"/><circle cx="36" cy="86" r="10" fill="#8C8276"/></svg>
+              <span style="font-size:12px;color:#8C8276;">Powered by Roico</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA FINAL ===== -->
+  <section id="contacto" style="width:100%;background:#FF5A36;">
+    <div class="container pad-mobile stack-mobile" style="padding-top:72px;padding-bottom:72px;display:flex;align-items:center;justify-content:space-between;gap:32px;">
+      <div style="max-width:520px;">
+        <h2 style="font-size:28px;font-weight:800;color:#FFFFFF;margin:0 0 10px;letter-spacing:-0.5px;">Hablemos de tu operación.</h2>
+        <p style="font-size:16px;color:#FFE8E0;margin:0;">Cuéntanos cómo trabajas hoy y te mostramos, con tus propios procesos, cómo se vería en Roico.</p>
+      </div>
+      <a href="mailto:hola@roico.com.co" style="background:#0A0A0A;color:#FFFFFF;font-weight:700;font-size:15px;padding:16px 28px;border-radius:9px;display:inline-block;white-space:nowrap;">Escríbenos</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer style="width:100%;background:#0A0A0A;color:#8C8276;">
+    <div class="container stack-mobile pad-mobile" style="padding-top:56px;padding-bottom:40px;display:flex;justify-content:space-between;gap:40px;">
+      <div style="max-width:300px;">
+        <div style="display:flex;align-items:center;gap:9px;margin-bottom:14px;">
+          <svg width="24" height="24" viewBox="0 0 120 120" aria-hidden="true"><line x1="82" y1="18" x2="82" y2="50" stroke="#FFFFFF" stroke-width="7"/><line x1="82" y1="50" x2="82" y2="72" stroke="#FFFFFF" stroke-width="7"/><line x1="82" y1="72" x2="60" y2="90" stroke="#FF5A36" stroke-width="7"/><line x1="60" y1="90" x2="36" y2="86" stroke="#FF5A36" stroke-width="7"/><circle cx="82" cy="18" r="9" fill="#FFFFFF"/><circle cx="82" cy="50" r="7.5" fill="#FFFFFF"/><circle cx="82" cy="72" r="7.5" fill="#FFFFFF"/><circle cx="60" cy="90" r="9" fill="#FF5A36"/><circle cx="36" cy="86" r="9" fill="#FF5A36"/></svg>
+          <span style="font-weight:800;font-size:18px;color:#FFFFFF;">Roico</span>
+        </div>
+        <p style="font-size:13px;line-height:1.6;margin:0;">Plataforma de gestión para empresas de confección y producción de ropa en Colombia.</p>
+      </div>
+
+      <div style="display:flex;gap:56px;flex-wrap:wrap;">
+        <div>
+          <div style="font-size:12px;font-weight:700;color:#F5F0E8;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:14px;">Producto</div>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <a href="#modulos" style="font-size:14px;color:#8C8276;">Módulos</a>
+            <a href="#proceso" style="font-size:14px;color:#8C8276;">Cómo funciona</a>
+            <a href="#marca-blanca" style="font-size:14px;color:#8C8276;">Para tu empresa</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:12px;font-weight:700;color:#F5F0E8;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:14px;">Contacto</div>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <a href="mailto:hola@roico.com.co" style="font-size:14px;color:#8C8276;">hola@roico.com.co</a>
+            <a href="#contacto" style="font-size:14px;color:#8C8276;">Agendar demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container pad-mobile" style="border-top:1px solid #2B2A28;padding-top:20px;padding-bottom:28px;">
+      <span style="font-size:12px;">© 2026 Roico. roico.com.co</span>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
