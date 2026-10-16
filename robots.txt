@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://roico.com.co/sitemap.xml
