@@ -217,7 +217,10 @@
           <textarea name="message" required rows="4" style="width:100%;padding:12px 14px;border:1px solid #F5F0E8;border-radius:8px;font-size:15px;font-family:'Sora',system-ui,sans-serif;color:#0A0A0A;resize:vertical;"></textarea>
         </div>
 
-        <button type="submit" style="background:#FF5A36;color:#FFFFFF;font-weight:700;font-size:15px;padding:14px 24px;border-radius:9px;border:none;cursor:pointer;margin-top:4px;">Enviar mensaje</button>
+        <div style="display:flex;align-items:center;gap:16px;margin-top:4px;">
+          <button type="submit" style="background:#FF5A36;color:#FFFFFF;font-weight:700;font-size:15px;padding:14px 24px;border-radius:9px;border:none;cursor:pointer;">Enviar mensaje</button>
+          <button type="button" id="roico-contact-cancel" style="background:none;color:#8C8276;font-weight:600;font-size:14px;border:none;cursor:pointer;padding:0;">Cancelar</button>
+        </div>
         <p id="roico-form-status" style="font-size:13px;margin:0;text-align:center;"></p>
       </form>
     </div>
@@ -228,6 +231,7 @@
     var form = document.getElementById('roico-contact-form');
     if(!form) return;
     var toggleBtn = document.getElementById('roico-contact-toggle');
+    var cancelBtn = document.getElementById('roico-contact-cancel');
     if(toggleBtn){
       toggleBtn.addEventListener('click', function(){
         form.style.display = 'flex';
@@ -235,6 +239,13 @@
         form.scrollIntoView({behavior:'smooth', block:'center'});
         var firstInput = form.querySelector('input[name="name"]');
         if(firstInput) firstInput.focus();
+      });
+    }
+    if(cancelBtn && toggleBtn){
+      cancelBtn.addEventListener('click', function(){
+        form.style.display = 'none';
+        toggleBtn.style.display = 'inline-block';
+        toggleBtn.scrollIntoView({behavior:'smooth', block:'center'});
       });
     }
     var status = document.getElementById('roico-form-status');
