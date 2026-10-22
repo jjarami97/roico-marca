@@ -217,6 +217,11 @@
           <textarea name="message" required rows="4" style="width:100%;padding:12px 14px;border:1px solid #F5F0E8;border-radius:8px;font-size:15px;font-family:'Sora',system-ui,sans-serif;color:#0A0A0A;resize:vertical;"></textarea>
         </div>
 
+        <label style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:#2B2A28;cursor:pointer;">
+          <input type="checkbox" name="consentimiento" required style="margin-top:3px;flex-shrink:0;">
+          <span>Acepto que mis datos sean tratados conforme a la <a href="/privacidad/" target="_blank" style="color:#FF5A36;">política de privacidad</a> de Roico, para que me contacten respecto a esta solicitud.</span>
+        </label>
+
         <div style="display:flex;align-items:center;gap:16px;margin-top:4px;">
           <button type="submit" style="background:#FF5A36;color:#FFFFFF;font-weight:700;font-size:15px;padding:14px 24px;border-radius:9px;border:none;cursor:pointer;">Enviar mensaje</button>
           <button type="button" id="roico-contact-cancel" style="background:none;color:#8C8276;font-weight:600;font-size:14px;border:none;cursor:pointer;padding:0;">Cancelar</button>
@@ -312,8 +317,12 @@
         </div>
       </div>
     </div>
-    <div class="container pad-mobile" style="border-top:1px solid #2B2A28;padding-top:20px;padding-bottom:28px;">
+    <div class="container pad-mobile stack-mobile" style="border-top:1px solid #2B2A28;padding-top:20px;padding-bottom:28px;display:flex;justify-content:space-between;align-items:center;gap:12px;">
       <span style="font-size:12px;">© 2026 Roico. roico.com.co</span>
+      <div style="display:flex;gap:20px;">
+        <a href="/privacidad/" style="font-size:12px;color:#8C8276;">Política de privacidad</a>
+        <a href="/terminos/" style="font-size:12px;color:#8C8276;">Términos de uso</a>
+      </div>
     </div>
   </footer>
 

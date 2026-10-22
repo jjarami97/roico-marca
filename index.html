@@ -367,7 +367,7 @@
         </p>
       </div>
 
-      <div class="grid-2" style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#2B2A28;border:1px solid #2B2A28;border-radius:16px;overflow:hidden;">
+      <div class="grid-3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#2B2A28;border:1px solid #2B2A28;border-radius:16px;overflow:hidden;">
 
         <div style="background:#141312;padding:30px;">
           <div style="width:38px;height:38px;border-radius:9px;background:rgba(255,90,54,0.14);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
@@ -389,8 +389,8 @@
           <div style="width:38px;height:38px;border-radius:9px;background:rgba(46,139,87,0.16);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
             <svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 8-7 9-4-1-7-4.5-7-9V6l7-3z" stroke="#2E8B57" stroke-width="1.8"/><path d="M9 12l2 2 4-4" stroke="#2E8B57" stroke-width="1.8"/></svg>
           </div>
-          <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;color:#FFFFFF;">Seguridad y cifrado</h3>
-          <p style="font-size:14px;line-height:1.6;color:#8C8276;margin:0;">Datos cifrados en tránsito y en reposo, con una base de datos aislada por empresa — la información de tu negocio nunca se mezcla con la de otro cliente.</p>
+          <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;color:#FFFFFF;">Cifrado de datos</h3>
+          <p style="font-size:14px;line-height:1.6;color:#8C8276;margin:0;">Conexión cifrada (HTTPS/SSL) en todo el sitio y datos cifrados en reposo, con una base de datos aislada por empresa — tu información nunca se mezcla con la de otro cliente.</p>
         </div>
 
         <div style="background:#141312;padding:30px;">
@@ -401,11 +401,27 @@
           <p style="font-size:14px;line-height:1.6;color:#8C8276;margin:0;">Copias de seguridad programadas y monitoreo continuo, para que la información de tu producción nunca se pierda.</p>
         </div>
 
+        <div style="background:#141312;padding:30px;">
+          <div style="width:38px;height:38px;border-radius:9px;background:rgba(124,92,194,0.18);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" stroke="#9C8CD6" stroke-width="1.8"/><path d="M4 12a8 8 0 0 1 15.3-3.2M20 12a8 8 0 0 1-15.3 3.2" stroke="#9C8CD6" stroke-width="1.8"/></svg>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;color:#FFFFFF;">Roles y permisos</h3>
+          <p style="font-size:14px;line-height:1.6;color:#8C8276;margin:0;">Cada usuario ve y hace solo lo que su rol permite — corte, bodega, ventas o administración acceden únicamente a su parte del sistema.</p>
+        </div>
+
+        <div style="background:#141312;padding:30px;">
+          <div style="width:38px;height:38px;border-radius:9px;background:rgba(79,166,166,0.18);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 3h6l1 3h3v2H5V6h3l1-3z" stroke="#4FA6A6" stroke-width="1.8"/><path d="M7 8v11a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V8" stroke="#4FA6A6" stroke-width="1.8"/></svg>
+          </div>
+          <h3 style="font-size:16px;font-weight:700;margin:0 0 8px;color:#FFFFFF;">Auditoría y trazabilidad</h3>
+          <p style="font-size:14px;line-height:1.6;color:#8C8276;margin:0;">Cada cambio importante queda registrado: quién lo hizo, cuándo, y qué información había antes y después.</p>
+        </div>
+
       </div>
 
       <div style="margin-top:28px;font-size:13px;color:#8C8276;display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 18a4.5 4.5 0 0 1-.4-8.98A5.5 5.5 0 0 1 17.3 7.05 4 4 0 0 1 17 15H7z" stroke="#8C8276" stroke-width="1.6"/></svg>
-        Infraestructura desplegada y operada sobre Amazon Web Services (AWS).
+        Infraestructura desplegada y operada sobre Amazon Web Services (AWS). Tratamiento de datos conforme a la Ley 1581 de 2012 (Colombia). <a href="/privacidad/" style="color:#8C8276;text-decoration:underline;">Ver política de privacidad</a>.
       </div>
     </div>
   </section>
@@ -511,6 +527,11 @@
           <textarea name="message" required rows="4" style="width:100%;padding:12px 14px;border:1px solid #F5F0E8;border-radius:8px;font-size:15px;font-family:'Sora',system-ui,sans-serif;color:#0A0A0A;resize:vertical;"></textarea>
         </div>
 
+        <label style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:#2B2A28;cursor:pointer;">
+          <input type="checkbox" name="consentimiento" required style="margin-top:3px;flex-shrink:0;">
+          <span>Acepto que mis datos sean tratados conforme a la <a href="/privacidad/" target="_blank" style="color:#FF5A36;">política de privacidad</a> de Roico, para que me contacten respecto a esta solicitud.</span>
+        </label>
+
         <div style="display:flex;align-items:center;gap:16px;margin-top:4px;">
           <button type="submit" style="background:#FF5A36;color:#FFFFFF;font-weight:700;font-size:15px;padding:14px 24px;border-radius:9px;border:none;cursor:pointer;">Enviar mensaje</button>
           <button type="button" id="roico-contact-cancel" style="background:none;color:#8C8276;font-weight:600;font-size:14px;border:none;cursor:pointer;padding:0;">Cancelar</button>
@@ -606,8 +627,12 @@
         </div>
       </div>
     </div>
-    <div class="container pad-mobile" style="border-top:1px solid #2B2A28;padding-top:20px;padding-bottom:28px;">
+    <div class="container pad-mobile stack-mobile" style="border-top:1px solid #2B2A28;padding-top:20px;padding-bottom:28px;display:flex;justify-content:space-between;align-items:center;gap:12px;">
       <span style="font-size:12px;">© 2026 Roico. roico.com.co</span>
+      <div style="display:flex;gap:20px;">
+        <a href="/privacidad/" style="font-size:12px;color:#8C8276;">Política de privacidad</a>
+        <a href="/terminos/" style="font-size:12px;color:#8C8276;">Términos de uso</a>
+      </div>
     </div>
   </footer>
 
