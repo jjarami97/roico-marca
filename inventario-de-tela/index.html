@@ -45,6 +45,16 @@
   }
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://roico.com.co/" },
+    { "@type": "ListItem", "position": 2, "name": "Inventario de tela", "item": "https://roico.com.co/inventario-de-tela/" }
+  ]
+}
+</script>
 <style>
   body{margin:0;background:#FFFFFF;font-family:'Sora',system-ui,sans-serif;color:#0A0A0A;-webkit-font-smoothing:antialiased;}
   a{color:#0A0A0A;text-decoration:none;}
@@ -143,6 +153,13 @@
   })();
   </script>
 
+  <!-- ===== BREADCRUMB ===== -->
+  <nav aria-label="Ruta de navegación" style="width:100%;background:#FFFFFF;border-bottom:1px solid #F5F0E8;">
+    <div class="container" style="padding:12px 24px;font-size:13px;color:#8C8276;">
+      <a href="/" style="color:#8C8276;">Inicio</a> <span style="color:#DDD3C2;">/</span> <span style="color:#2B2A28;">Inventario de tela</span>
+    </div>
+  </nav>
+
   <!-- ===== HERO ===== -->
   <section style="width:100%;background:#0A0A0A;color:#FFFFFF;">
     <div class="container pad-mobile" style="padding-top:88px;padding-bottom:88px;max-width:760px;">
@@ -221,6 +238,8 @@
           <p style="font-size:14px;line-height:1.6;color:#8C8276;margin:0;">Identifica cuándo un insumo está por agotarse, para comprar a tiempo y no frenar la producción.</p>
         </div>
       </div>
+
+      <p style="font-size:14px;line-height:1.6;color:#8C8276;margin:28px 0 0;">Si parte de tu producción es tercerizada, el mismo control de materiales se extiende a tus talleres externos: mira cómo Roico controla las <a href="/talleres-de-confeccion/" style="color:#FF5A36;font-weight:600;">entregas a talleres de confección</a>.</p>
     </div>
   </section>
 
