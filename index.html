@@ -27,7 +27,9 @@
 <link rel="apple-touch-icon" href="/assets/icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Fraunces:ital,wght@1,400;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Fraunces:ital,wght@1,400;1,500;1,600&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Fraunces:ital,wght@1,400;1,500;1,600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Fraunces:ital,wght@1,400;1,500;1,600&display=swap" rel="stylesheet"></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -167,6 +169,7 @@
   })();
   </script>
 
+  <main>
   <!-- ===== HERO ===== -->
   <section id="inicio" style="width:100%;background:#0A0A0A;color:#FFFFFF;">
     <div class="container stack-mobile pad-mobile hero-pad-mobile" style="display:flex;align-items:center;gap:56px;padding-top:88px;padding-bottom:88px;">
@@ -495,7 +498,7 @@
       <p style="font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:30px;line-height:1.45;color:#0A0A0A;max-width:720px;margin:0 auto;">
         "La plataforma que guía tu operación textil."
       </p>
-      <div style="margin-top:20px;font-size:13px;color:#8C8276;letter-spacing:0.04em;">
+      <div style="margin-top:20px;font-size:13px;color:#6E6559;letter-spacing:0.04em;">
         Ro'i "mi guía" — Co "confección".
       </div>
     </div>
@@ -538,7 +541,7 @@
             </div>
           </div>
           <div style="background:#FFFFFF;border-radius:0 0 11px 11px;padding:22px;">
-            <div style="font-size:12px;color:#8C8276;background:#F5F0E8;border-radius:7px;padding:9px 12px;margin-bottom:18px;">🔒 tuempresa.roico.com</div>
+            <div style="font-size:12px;color:#6E6559;background:#F5F0E8;border-radius:7px;padding:9px 12px;margin-bottom:18px;">🔒 tuempresa.roico.com</div>
             <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:22px;">
               <span style="font-size:16px;font-weight:700;">Tu Empresa</span>
               <span style="width:28px;height:28px;border-radius:50%;background:#F5F0E8;"></span>
@@ -550,7 +553,7 @@
             </div>
             <div style="margin-top:22px;padding-top:16px;border-top:1px solid #F5F0E8;display:flex;align-items:center;justify-content:center;gap:6px;">
               <svg width="14" height="14" viewBox="0 0 120 120" aria-hidden="true"><line x1="82" y1="18" x2="82" y2="50" stroke="#8C8276" stroke-width="9"/><line x1="82" y1="50" x2="82" y2="72" stroke="#8C8276" stroke-width="9"/><line x1="82" y1="72" x2="60" y2="90" stroke="#8C8276" stroke-width="9"/><line x1="60" y1="90" x2="36" y2="86" stroke="#8C8276" stroke-width="9"/><circle cx="82" cy="18" r="10" fill="#8C8276"/><circle cx="82" cy="50" r="9" fill="#8C8276"/><circle cx="82" cy="72" r="9" fill="#8C8276"/><circle cx="60" cy="90" r="10" fill="#8C8276"/><circle cx="36" cy="86" r="10" fill="#8C8276"/></svg>
-              <span style="font-size:12px;color:#8C8276;">Powered by Roico</span>
+              <span style="font-size:12px;color:#6E6559;">Powered by Roico</span>
             </div>
           </div>
         </div>
@@ -563,7 +566,7 @@
     <div class="container pad-mobile" style="padding-top:72px;padding-bottom:80px;max-width:640px;">
       <div style="text-align:center;">
         <h2 style="font-size:28px;font-weight:800;color:#FFFFFF;margin:0 0 10px;letter-spacing:-0.5px;">Hablemos de tu operación.</h2>
-        <p style="font-size:16px;color:#FFE8E0;margin:0 0 24px;">Cuéntanos cómo trabajas hoy y te contactamos en menos de 24 horas.</p>
+        <p style="font-size:16px;color:#451A0E;margin:0 0 24px;">Cuéntanos cómo trabajas hoy y te contactamos en menos de 24 horas.</p>
         <button id="roico-contact-toggle" type="button" style="background:#0A0A0A;color:#FFFFFF;font-weight:700;font-size:15px;padding:16px 28px;border-radius:9px;border:none;cursor:pointer;">Quiero una prueba</button>
       </div>
 
@@ -597,7 +600,7 @@
 
         <div style="display:flex;align-items:center;gap:16px;margin-top:4px;">
           <button type="submit" style="background:#FF5A36;color:#FFFFFF;font-weight:700;font-size:15px;padding:14px 24px;border-radius:9px;border:none;cursor:pointer;">Enviar mensaje</button>
-          <button type="button" id="roico-contact-cancel" style="background:none;color:#8C8276;font-weight:600;font-size:14px;border:none;cursor:pointer;padding:0;">Cancelar</button>
+          <button type="button" id="roico-contact-cancel" style="background:none;color:#6E6559;font-weight:600;font-size:14px;border:none;cursor:pointer;padding:0;">Cancelar</button>
         </div>
         <p id="roico-form-status" style="font-size:13px;margin:0;text-align:center;"></p>
       </form>
@@ -653,6 +656,7 @@
     });
   })();
   </script>
+  </main>
 
   <!-- ===== FOOTER ===== -->
   <footer style="width:100%;background:#0A0A0A;color:#8C8276;">
