@@ -53,6 +53,7 @@
   button{font-family:'Sora',system-ui,sans-serif;cursor:pointer;border:none;}
   * { box-sizing: border-box; }
   .container{width:100%;max-width:1160px;margin:0 auto;padding-inline:24px;}
+  .mobile-menu-btn{display:none;}
   @media (max-width:860px){
     .hide-mobile{display:none !important;}
     .stack-mobile{flex-direction:column !important;}
@@ -60,6 +61,7 @@
     .grid-3{grid-template-columns:1fr !important;}
     .h1-fluid{font-size:40px !important;line-height:1.1 !important;}
     .pad-mobile{padding-left:24px !important;padding-right:24px !important;}
+    .mobile-menu-btn{display:inline-flex !important;}
   }
 </style>
 </head>
@@ -100,9 +102,45 @@
       <div style="display:flex;align-items:center;gap:12px;">
         <a href="/#contacto" class="hide-mobile nav-link" style="font-size:15px;font-weight:600;">Iniciar sesión</a>
         <a href="/#contacto" style="background:#FF5A36;color:#FFFFFF;font-weight:700;font-size:14px;padding:11px 20px;border-radius:8px;display:inline-block;">Agendar una prueba</a>
+        <button id="roico-menu-toggle" class="mobile-menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="#0A0A0A" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
       </div>
     </div>
+
+    <div id="roico-mobile-nav" style="display:none;width:100%;background:#FFFFFF;border-top:1px solid #F5F0E8;">
+      <nav class="container" style="display:flex;flex-direction:column;padding:8px 24px 24px;">
+        <a href="/#modulos" style="padding:14px 0;font-size:16px;font-weight:600;color:#0A0A0A;border-bottom:1px solid #F5F0E8;">Producto</a>
+        <a href="/#proceso" style="padding:14px 0;font-size:16px;font-weight:600;color:#0A0A0A;border-bottom:1px solid #F5F0E8;">Cómo funciona</a>
+        <a href="/#infraestructura" style="padding:14px 0;font-size:16px;font-weight:600;color:#0A0A0A;border-bottom:1px solid #F5F0E8;">Infraestructura</a>
+        <a href="/#marca-blanca" style="padding:14px 0;font-size:16px;font-weight:600;color:#0A0A0A;border-bottom:1px solid #F5F0E8;">Para tu empresa</a>
+        <a href="/talleres-de-confeccion/" style="padding:14px 0;font-size:16px;font-weight:600;color:#0A0A0A;border-bottom:1px solid #F5F0E8;">Talleres de confección</a>
+        <a href="/inventario-de-tela/" style="padding:14px 0;font-size:16px;font-weight:600;color:#0A0A0A;border-bottom:1px solid #F5F0E8;">Inventario de tela</a>
+        <a href="/preguntas-frecuentes/" style="padding:14px 0;font-size:16px;font-weight:600;color:#0A0A0A;border-bottom:1px solid #F5F0E8;">Preguntas frecuentes</a>
+        <a href="#contacto" style="padding:14px 0;font-size:16px;font-weight:600;color:#0A0A0A;">Contacto</a>
+        <a href="#contacto" style="margin-top:16px;background:#FF5A36;color:#FFFFFF;font-weight:700;font-size:15px;padding:14px 20px;border-radius:9px;text-align:center;">Agendar una prueba</a>
+      </nav>
+    </div>
   </header>
+
+  <script>
+  (function(){
+    var btn = document.getElementById('roico-menu-toggle');
+    var panel = document.getElementById('roico-mobile-nav');
+    if(!btn || !panel) return;
+    btn.addEventListener('click', function(){
+      var isOpen = panel.style.display === 'block';
+      panel.style.display = isOpen ? 'none' : 'block';
+      btn.setAttribute('aria-expanded', String(!isOpen));
+    });
+    Array.prototype.forEach.call(panel.querySelectorAll('a'), function(a){
+      a.addEventListener('click', function(){
+        panel.style.display = 'none';
+        btn.setAttribute('aria-expanded', 'false');
+      });
+    });
+  })();
+  </script>
 
   <!-- ===== HERO ===== -->
   <section style="width:100%;background:#0A0A0A;color:#FFFFFF;">
